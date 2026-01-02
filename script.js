@@ -5,7 +5,7 @@ const clearAll = document.getElementById("clearAll");
 const filterBtns = document.querySelectorAll(".filter-btns button");
 const sound = document.getElementById("doneSound");
 
-sound.src = "https://assets.mixkit.co/sfx/preview/mixkit-message-pop-alert-2354.mp3";
+sound.src = "./Done.mp3";
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let currentFilter = "all";
@@ -118,5 +118,6 @@ filterBtns.forEach(btn => {
         render();
     };
 });
+
 
 render();
